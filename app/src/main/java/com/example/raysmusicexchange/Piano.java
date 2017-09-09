@@ -1,6 +1,5 @@
 package com.example.raysmusicexchange;
-import Instrument;
-import Playable;
+
 
 /**
 // * Created by allysonwilson on 9/8/17.
@@ -23,7 +22,6 @@ public class Piano
 
     public String soundOfInstrument() { return "tinkley"; }
 
-    public String getColor() { return this.color;}
 
 }
 
