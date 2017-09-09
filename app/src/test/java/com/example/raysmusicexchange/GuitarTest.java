@@ -15,17 +15,23 @@ public class GuitarTest {
     public void before() { guitar = new Guitar("Black", "String", 6); }
 
     @Test
-    public void hasColor() {
+    public void testHasColor() {
         assertEquals("Black", guitar.getColor() );
     }
 
     @Test
-    public void hasType() {
+    public void testHasType() {
         assertEquals("String", guitar.getType() );
     }
 
     @Test
-    public void hasNumberOfStrings(){
+    public void TestHasNumberOfStrings(){
         assertEquals( 6, guitar.getNumberOfStrings() );
     }
+
+     @Test
+     public void TestHasSoundOfInstrument() { assertEquals("strum, strum", guitar.soundOfInstrument() );}
+
+
 }
+

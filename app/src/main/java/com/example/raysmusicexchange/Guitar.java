@@ -1,4 +1,6 @@
 package com.example.raysmusicexchange;
+import Instrument;
+import Playable;
 
 /**
  * Created by allysonwilson on 9/8/17.
@@ -15,7 +17,7 @@ public class Guitar
         this.numberOfStrings = numberOfStrings;
     }
 
-    public String soundOfInstrument() {
+   public String soundOfInstrument() {
         return "strum, strum";
     }
 

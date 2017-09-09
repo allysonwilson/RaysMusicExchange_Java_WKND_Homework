@@ -1,4 +1,6 @@
 package com.example.raysmusicexchange;
+import Instrument;
+import Playable;
 
 /**
 // * Created by allysonwilson on 9/8/17.
@@ -10,21 +12,19 @@ public class Piano
 
    private int numberOfKeys;
 
-    public Piano(int numberOfKeys){
-        super(color, type;
+    public Piano(String color, String type, int numberOfKeys){
+        super(color, type);
         this.numberOfKeys = numberOfKeys;
     }
 
-    private int getNumberOfKeys() {
+    public int getNumberOfKeys() {
         return numberOfKeys;
     }
 
-    public String soundOfInstrument() { return ("tinkley");}
+    public String soundOfInstrument() { return "tinkley"; }
 
     public String getColor() { return this.color;}
 
 }
-//
-//
-//// 88 keys on a piano
+
 
