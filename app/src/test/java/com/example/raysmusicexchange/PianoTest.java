@@ -11,7 +11,7 @@ public class PianoTest {
     Piano piano;
 
 @Before
-    public void before() { piano = new Piano( "white", "string", 88); }
+    public void before() { piano = new Piano( "white", "string", 88, 10, 12); }
 
     @Test
     public void testHasColor() {
@@ -31,6 +31,10 @@ public class PianoTest {
     @Test
     public void testSoundOfInstrument() {
         assertEquals( "tinkley" , piano.soundOfInstrument());
+    }
+    @Test
+    public void testCalculateMarkUp() {
+        assertEquals( 20%, piano.getCalculateMarkUp );
     }
 }
 

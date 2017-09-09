@@ -7,11 +7,14 @@ package com.example.raysmusicexchange;
 //
 public class Piano
         extends Instrument
-        implements Playable {
+        implements Playable , Sellable {
 
    private int numberOfKeys;
+   private int boughtPrice;
+   private int sellingPrice;
 
-    public Piano(String color, String type, int numberOfKeys){
+    public Piano(String color, String type, int numberOfKeys, int boughtPrice, int
+sellingPrice){
         super(color, type);
         this.numberOfKeys = numberOfKeys;
     }
@@ -23,6 +26,11 @@ public class Piano
     public String soundOfInstrument() { return "tinkley"; }
 
 
+    public int calculateMarkup() {
+        return 20% ;
+
+    }
 }
 
-
+// sellingPrice = boughtPrice * 20% + boughtPrice;
+//         return sellingPrice;
