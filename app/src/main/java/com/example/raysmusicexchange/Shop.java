@@ -17,6 +17,9 @@ public class Shop {
         return this.stock;
     }
 
+    public void addStock(Sellable sellable) {
+        this.stock.add(sellable);
+    }
 }
 
 

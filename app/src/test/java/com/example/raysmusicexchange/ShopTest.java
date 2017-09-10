@@ -32,9 +32,12 @@ public class ShopTest {
         ArrayList<Sellable> result = shop.getStock();
 //        Assert
         assertEquals("string instrument", "Sheet Music", shop.getStock() );
-
     }
-
+    @Test
+    public void canAddItemToStock(){
+        
+        assertEquals( "string instrument"), shop.getStock() ) ;
+    }
 }
 
 //  piano = new Piano( "white", "string", 88, 10.00, 12.00);
