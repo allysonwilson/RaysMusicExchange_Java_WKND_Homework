@@ -20,5 +20,10 @@ public class TubaTest {
     @Test
     public void testHasNumberOfValves() {
         assertEquals( 3, tuba.getNumberOfValves() ); }
+
+    @Test
+    public void testSoundOfInstrument() {
+        assertEquals("Bmp, bum, bump", tuba.soundOfInstrument() );
+    }
 }
 
