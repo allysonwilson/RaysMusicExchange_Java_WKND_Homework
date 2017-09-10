@@ -13,17 +13,16 @@ public class Shop {
         this.stock = new ArrayList<>();
     }
 
-    public ArrayList<Sellable> getStock() { return this.stock ; }
-
-    public void addStock(){
-
-        Sellable piano;
-        Sellable sheetMusic;
-        this.stock.add( piano , sheetMusic);
+    public ArrayList<Sellable> getStock() {
+        return this.stock;
     }
+
 }
 
 
-//    Sellable items, called stock
-//        add items to stock.
-//        remove items from stock.
+//    public void getStock() {
+//
+//        Piano piano;
+//        SheetMusic sheetMusic;
+//        {return this.stock.add(piano, sheetMusic);}
+//    }

@@ -11,7 +11,7 @@ public class PianoTest {
     Piano piano;
 
 @Before
-    public void before() { piano = new Piano( "white", "string", 88, 10.00, 12.00); }
+    public void before() { piano = new Piano( "white", "string instrument", 88, 10.00, 12.00); }
 
     @Test
     public void testHasColor() {
@@ -20,7 +20,7 @@ public class PianoTest {
 
     @Test
     public void testHasType() {
-        assertEquals( "string" , piano.getType() );
+        assertEquals( "string instrument" , piano.getType() );
     }
 
     @Test

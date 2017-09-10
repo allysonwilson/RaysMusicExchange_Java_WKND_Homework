@@ -12,26 +12,34 @@ import static junit.framework.Assert.assertEquals;
 
 public class ShopTest {
     Shop shop;
-    Piano piano;
-    SheetMusic sheetMusic;
     ArrayList<Sellable> stock;
 
 
     @Before
     public void before() {
-        stock = new ArrayList<Sellable>();
-        shop = new Shop(stock);
-        piano = new Piano( "white", "string", 88, 10.00, 12.00);
-        sheetMusic = new SheetMusic( 5.00, 6.00, "Sheet Music") ;
-        stock.add(piano);
-        stock.add(sheetMusic);
+        stock = new ArrayList<>();
+        stock.add(new Piano( "white", "string instrument", 88, 10.00, 12.00) );
+        stock.add(new SheetMusic(5.00, 6.00, "Sheet Music") );
+
+
     }
+
     @Test
-    private void testAddItemToStock(){
-        piano Piano
-        sheetMusic SheetMusic
-        AssertEquals(piano, sheetMusic, shop.getStock(); )
+   public void canGetStock(){
+//        arrange
+        shop = new Shop();
+//        act
+        ArrayList<Sellable> result = shop.getStock();
+//        Assert
+        assertEquals("string instrument", "Sheet Music", shop.getStock() );
+
     }
 
 }
 
+//  piano = new Piano( "white", "string", 88, 10.00, 12.00);
+//        sheetMusic = new SheetMusic( 5.00, 6.00, "Sheet Music") ;
+//        stock.add(piano);
+//        stock.add(sheetMusic);
+//
+//    assertEquals("Guitar", ((Guitar) result.get(0)).getInstrument());
