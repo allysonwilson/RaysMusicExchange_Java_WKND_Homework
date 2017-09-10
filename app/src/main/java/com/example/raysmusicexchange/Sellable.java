@@ -5,7 +5,7 @@ package com.example.raysmusicexchange;
  */
 
 public interface Sellable {
-    int calculateMarkup();
+    double calculateMarkUp();
 }
 
 

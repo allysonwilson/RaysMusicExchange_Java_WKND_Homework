@@ -10,13 +10,14 @@ public class Piano
         implements Playable , Sellable {
 
    private int numberOfKeys;
-   private int boughtPrice;
-   private int sellingPrice;
+   private double boughtPrice;
+   private double salePrice;
 
-    public Piano(String color, String type, int numberOfKeys, int boughtPrice, int
-sellingPrice){
+    public Piano(String color, String type, int numberOfKeys, double boughtPrice, double
+salePrice){
         super(color, type);
         this.numberOfKeys = numberOfKeys;
+        this.boughtPrice = 10.00;
     }
 
     public int getNumberOfKeys() {
@@ -26,11 +27,16 @@ sellingPrice){
     public String soundOfInstrument() { return "tinkley"; }
 
 
-    public int calculateMarkup() {
-        return 20% ;
+    public double calculateMarkUp() {
+        return (0.20 * boughtPrice) ;
 
+    }
+
+    public double getSalePrice() {
+        return (boughtPrice += calculateMarkUp()) ;
     }
 }
 
 // sellingPrice = boughtPrice * 20% + boughtPrice;
 //         return sellingPrice;
+//(20 * 100)/sellingPrice

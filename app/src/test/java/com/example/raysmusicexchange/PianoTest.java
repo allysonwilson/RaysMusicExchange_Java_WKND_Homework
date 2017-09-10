@@ -11,7 +11,7 @@ public class PianoTest {
     Piano piano;
 
 @Before
-    public void before() { piano = new Piano( "white", "string", 88, 10, 12); }
+    public void before() { piano = new Piano( "white", "string", 88, 10.00, 12.00); }
 
     @Test
     public void testHasColor() {
@@ -32,9 +32,15 @@ public class PianoTest {
     public void testSoundOfInstrument() {
         assertEquals( "tinkley" , piano.soundOfInstrument());
     }
+
     @Test
     public void testCalculateMarkUp() {
-        assertEquals( 20%, piano.getCalculateMarkUp );
+        assertEquals( 2.00, .01, piano.calculateMarkUp() );
+    }
+
+    @Test
+    public void testHasSalePrice() {
+        assertEquals(12.00, 0.1, piano.getSalePrice() );
     }
 }
 

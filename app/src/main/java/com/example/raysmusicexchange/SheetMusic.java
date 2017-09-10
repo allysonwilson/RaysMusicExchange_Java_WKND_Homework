@@ -7,10 +7,28 @@ package com.example.raysmusicexchange;
 public class SheetMusic
         implements Sellable {
 
-    private int  boughtPrice;
-    private int sellingPrice;
+    private double boughtPrice;
+    private double salePrice;
+    private String type;
 
-    public int calculateMarkup() {
-        return 0;
+    public SheetMusic( double boughtPrice, double salePrice, String type){
+        this.boughtPrice = boughtPrice;
+        this.salePrice = salePrice;
+        this.type = type;
     }
+
+    public double calculateMarkUp() {
+        return (0.20 * boughtPrice);
+    }
+
+    public double getSalePrice() {
+        return (boughtPrice += calculateMarkUp()) ;
+    }
+
+    public double getBoughtPrice() {
+        return boughtPrice;
+    }
+        public String getType() {
+            return type;
+        }
 }
